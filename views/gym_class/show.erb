@@ -1,0 +1,42 @@
+<h1>List of Gym Classes</h1>
+
+<!-- # <%= @gym_class.gymclass_name %> -->
+
+<table>
+  <tr>
+    <th>Class</th>
+    <th>Description</th>
+    <th>Instructor</th>
+    <th>Cost</th>
+    <th>Class Time</th>
+  </tr>
+
+  <tr>
+    <td><%= @gym_class.gymclass_name %></td>
+    <td><%= @gym_class.description %></td>
+    <td><%= @gym_class.instructor %></td>
+    <td>£<%= @gym_class.cost %></td>
+    <td><%= @gym_class.classtime%></td>
+  </tr>
+</table>
+
+<form  action="/gym_classes/<%= @gym_class.id %>/edit">
+  <input type="submit" value="Edit Class"/>
+</form>
+
+<form method="post" action="/gym_classes/<%= @gym_class.id %>/delete">
+  <input type="submit" value="Delete Class"/>
+</form>
+
+
+<form  action="/gym_classes/<%= @gym_class.id %>/members">
+  <input type="submit" value="View Members"/>
+</form>
+
+<form  action="/gym_classes/<%= @gym_class.id %>/book_class">
+  <input type="submit" value="Book Member"/>
+</form>
+
+<form action="/gym_classes">
+  <input type="submit" value="Gym Classes Home"/>
+</form>

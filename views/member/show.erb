@@ -1,0 +1,35 @@
+<h1><%= @members.first_name %> <%= @members.last_name %> Member</h1>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Membership Type</th>
+  </tr>
+
+  <tr>
+    <td>
+      <%= @members.first_name %>
+    </td>
+    <td>
+      <%= @members.last_name %>
+    </td>
+    <td>
+      <%= @members.membership_type %>
+    </td>
+  </tr>
+</table>
+
+<form  action="/members/<%= @members.id %>/edit">
+  <input class="edit" type="submit" value="Edit User"/>
+</form>
+
+<form method="post" action="/members/<%= @members.id %>/delete">
+  <input class="delete" type="submit" value="Delete User"/>
+</form>
+
+
+
+<form action="/members">
+  <input type="submit" value="Member Page"/>
+</form>

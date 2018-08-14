@@ -1,0 +1,26 @@
+<h1>All Bookings</h1>
+
+<div class = "table-container">
+<table>
+  <tr>
+    <th>Member</th>
+    <th>Class</th>
+  </tr>
+  <% for booking in @bookings %>
+  <tr>
+    <td><%= booking.member.first_name %></td>
+    <td><%= booking.gym_class.title %></td>
+    <td>
+      <form action="/booking/<%= booking.id %>/delete" method="POST">
+        <input class="delete" type="submit" value="delete" />
+      </form>
+    </td>
+  </tr>
+
+  <% end %>
+</table>
+
+<form class="button-forms" method ="get" action="/">
+  <input class="home" type="submit" value="home"/>
+</form>
+</div>

@@ -1,0 +1,20 @@
+<h1>Edit <%= @members.first_name %> <%= @members.last_name %> Profile</h1>
+
+
+<form method ="post" action="/members/<%=@members.id%>">
+
+  <label for ="first-name-field">First Name:</label>
+  <input type ="text" name ="first_name" id="first-name-field" value ="<%= @members.first_name %>" />
+
+  <label for="last-name-field">Last Name:</label>
+  <input type="text" name="last_name" id="last-name-field" value="<%= @members.last_name %>" />
+
+  <label for="membership_type"> Select your membership</label>
+  <select name="membership_type" id="membership_type">
+    <option value ="Basic" <%= "selected" if @members.membership_type == "Basic" %>> Basic</option>
+    <option value ="Premium" <%= "selected" if @members.membership_type == "Premium" %>>Premium</option>
+  </select>
+
+  <input class="edit" type="submit" value ="Edit Member" />
+
+</form>
