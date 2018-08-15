@@ -10,7 +10,7 @@ class TestGymClass < MiniTest::Test
     'description' => 'Using techniques from different types of martial arts',
     'instructor' => 'Rhonda Rousey',
     'cost' => '5',
-    'time' => '60'
+    'classtime' => 60
     })
   end
 
@@ -31,7 +31,7 @@ class TestGymClass < MiniTest::Test
   end
 
   def test_gymclass_time
-    assert_equal(60, @gymclass1.time)
+    assert_equal(60, @gymclass1.classtime)
   end
-  
+
 end
