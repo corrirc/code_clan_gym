@@ -11,57 +11,57 @@ GymClass.delete_all()
 member1 = Member.new({
  'first_name' => 'Ricky',
  'last_name' => 'Corrigan',
- 'membership' => 'Basic'
+ 'membership_type' => 'Basic'
 })
 member1.save()
 
 member2 = Member.new({
  'first_name' => 'Cristiano',
  'last_name' => 'Ronaldo',
- 'membership' => 'Basic'
+ 'membership_type' => 'Basic'
 })
 member2.save()
 
 member3 = Member.new({
  'first_name' => 'Lionel',
  'last_name' => 'Messi',
- 'membership' => 'Basic'
+ 'membership_type' => 'Basic'
 })
 member3.save()
 
 gymclass1 = GymClass.new({
-  'gym_class_name' => 'MMA',
+  'gymclass_name' => 'MMA',
   'description' => 'Using techniques from different types of martial arts. Class members will get to practice grappling, striking and many other techniques.',
-  'instuctor' => 'Rhonda Rousey',
+  'instructor' => 'Rhonda Rousey',
   'cost' => '5',
-  'classtime' => '60'
+  'classtime' => '09:00:00'
 })
 gymclass1.save()
 
 gymclass2 = GymClass.new({
-  'gym_class_name' => 'BodyWeightTraining',
+  'gymclass_name' => 'BodyWeightTraining',
   'description' => 'The old way of training. Pushups, pullups, crunches and many more. Will help target and strengthn all areas of the body',
-  'instuctor' => 'Jimmy Abs',
+  'instructor' => 'Jimmy Abs',
   'cost' => '10',
-  'classtime' => '45'
+  'classtime' => '11:00:00'
 })
 gymclass2.save()
 
 gymclass3 = GymClass.new({
-  'gym_class_name' => 'Yoga',
+  'gymclass_name' => 'Yoga',
   'description' => 'Great for injury prevention and core strength. Yoga will keep you physically and mentally in shape.',
-  'instuctor' => 'Some Hot Women',
+  'instructor' => 'Some Hot Women',
   'cost' => '7',
-  'classtime' => '60'
+  'classtime' => '13:00:00'
 })
 gymclass3.save()
 
 gymclass4 = GymClass.new({
-  'gym_class_name' => 'Spinning',
+  'gymclass_name' => 'Spinning',
   'description' => 'Get you heart racing with this cardio session to get your body burning calories',
-  'instuctor' => 'Lance Armstong',
+  'instructor' => 'Lance Armstong',
   'cost' => '6',
-  'classtime' => '45'
+  'classtime' => '15:00:00'
 })
 gymclass4.save()
 

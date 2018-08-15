@@ -4,7 +4,7 @@
 <form method = "POST" action="/gym_classes/<%= @gym_class.id%>">
 
   <label for ="title-field">Class Name:</label>
-  <input type ="text" name ="title" id="title-field" value ="<%= @gym_class.gymclass_name %>" />
+  <input type ="text" name ="gymclass_name" id="title-field" value ="<%= @gym_class.gymclass_name %>" />
 
   <label for="description-field">Description:</label>
   <input type="text" name="description" id="description-field" value="<%= @gym_class.description %>" />
@@ -13,10 +13,10 @@
   <input type="text" name="instructor" id="instructor-field" value="<%= @gym_class.instructor %>" />
 
   <label for="cost-field">Cost: £</label>
-  <input type="number" name="fee" id="cost-field" value="<%= @gym_class.cost %>" />
+  <input type="number" name="cost" id="cost-field" value="<%= @gym_class.cost %>" />
 
   <label for="class_time"> Class Time:</label>
-  <input type="time" name="class_time" id="class_time-field" value="<%= @gym_class.classtime %>" />
+  <input type="time" name="classtime" id="class_time-field" value="<%= @gym_class.classtime %>" />
 
 <input class="edit" type="submit" value="Edit Class" />
 
