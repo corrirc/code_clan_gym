@@ -11,7 +11,7 @@ class GymClass
     @description = options['description']
     @instructor = options['instructor']
     @cost = options['cost'].to_i
-    @classtime = options['time'].to_i
+    @classtime = options['classtime']
   end
 
   def save()
