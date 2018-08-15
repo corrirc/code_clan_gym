@@ -50,7 +50,7 @@ gymclass2.save()
 gymclass3 = GymClass.new({
   'gym_class_name' => 'Yoga',
   'description' => 'Great for injury prevention and core strength. Yoga will keep you physically and mentally in shape.',
-  'instuctor' => 'Belinda Bends',
+  'instuctor' => 'Some Hot Women',
   'cost' => '7',
   'classtime' => '60'
 })

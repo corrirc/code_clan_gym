@@ -1,3 +1,38 @@
-h1 {
-    color: black;
+body {
+ background: darkgrey;
+ font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+  color:lightgrey;
+  text-align: center;
+  font-size: 3em;
+}
+
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  float: left;
+  display: inline-grid;
+  background: lightgrey;
+  text-decoration: none;
+  padding: 8px 16px;
+  color: tomato;
+  margin: 5px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.pushup {
+  float: left;
+  height:400px;
+  width:400px;
 }
